@@ -1,0 +1,440 @@
+body {
+    background-image: url('images/backgrounds/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: "poppins", sans-serif;
+    font-size: 4em;
+    font-weight: 600;
+    text-align: center;
+    color: #222;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 2s;
+}
+
+h1:hover {
+    color: #35b80d;
+    text-shadow: 0 0 5px #35b80d,
+        0 0 25px #35b80d,
+        0 0 50px #35b80d,
+        0 0 100px #35b80d;
+}
+
+li {
+    float: left;
+}
+
+.navbar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+li a {
+    font-family: sans-serif;
+    font-weight: bold;
+    display: block;
+    color: #ececec;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+/* changing the link color to #062149 */
+li a:hover {
+    background-color: #181818;
+}
+
+li a:hover:not(.active) {
+    background-color: #3b3b3b;
+}
+
+.active {
+    background-color: #000;
+}
+
+
+.register {
+    float: right;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #35b80d;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 29px;
+    text-transform: uppercase;
+    margin-left: 10%;
+    
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    flex: 4;
+    gap: 2rem;
+}
+
+.image-container {
+    margin: 0 auto; /* center the image containers */
+    width: 39%;
+    box-shadow: 0 15px 30px #222;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    background-color: #1c342c;
+    cursor: pointer;
+}
+
+.image-container:hover {
+    animation: bounce 1.5s linear infinite;
+    animation-name: bounce;
+    transition: 2s;
+}
+
+@keyframes bounce {
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.description {
+    padding: 0 15px 15px 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    height: 5%;
+    font-weight: bold;
+    color: #fff;
+}
+
+img {
+    height: 340px;
+    width: 280px;
+}
+
+.gucci {
+    height: 340px;
+    width: 280px;
+    border: 2px solid #000;
+}
+
+.blink {
+    animation: blinker 1.5s linear infinite;
+    animation-name: blinker;
+    color: #1c342c;
+    font-family: 'Times New Roman', Times, serif;
+    direction: ltr;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    gap: 2rem;
+}
+
+.balenciaga {
+    border: 2px solid #000;
+    height: 340px;
+    width: 290px;
+}
+
+.image-box {
+    margin: 0 auto; /* center the image containers */
+    width: 100%;
+    box-shadow: 0 15px 30px #222;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    background-color: #1c342c;
+    cursor: pointer;
+}
+
+.box-description {
+    padding: 0 15px 15px 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    height: 5%;
+    width: 70%;
+    color: #fff;
+    padding-left: 15%;
+}
+
+.image-box:hover {
+    animation: shake 1.5s linear infinite;
+    animation-name: shake;
+    transition: 2s;
+}
+
+@keyframes shake {
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.men-cloth {
+    width: 250px;
+    height: 340px;
+}
+
+/* icons styling */
+
+.icons {
+    position: relative;
+    top: -3%;
+    left: 50%;
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    height: 40px;
+    width: 130px;
+    border: 3px inset #3aeb04;
+    border-radius: 10px;
+    left: 35%;
+    top: 5px;
+    cursor: pointer;
+}
+
+.fa-solid {
+    position: absolute;
+    font-weight: 800;
+    color: #fff;
+    top: 20px;
+}
+
+span {
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+    font-family: serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* text gradient */
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 85px;
+    font-weight: 600;
+    letter-spacing: 4;
+    text-align: center;
+    background-image: linear-gradient(210deg, #114103, #3aeb04, #92ff71);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: scale(1.0);
+    transition: transform 4s;
+}
+
+
+/* button for see more */
+#see-me {
+    height: 80px;
+    width: 300px;
+    margin: 60px;
+    padding: 0;
+    background-color: transparent;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 10px inset #3aeb04;
+    transition: 1s;
+}
+
+/* h4 style */
+h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    margin-left: 5%;
+    text-transform: capitalize;
+    color: #35b80d;
+}
+
+#specific {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 43px;
+    margin-left: 2%;
+    text-transform: capitalize;
+    color: #cecece;
+    top: -75%;
+    position: relative;
+}
+
+/* h5 style */
+h5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #cecece;
+    position: relative;
+    top: -35vh;
+}
+
+.article {
+    background-color: #222;
+    width: 450px;
+    height: 600px;
+    margin-left: 3%;
+    padding-top: 0;
+    display: grid;
+    place-items: center;
+}
+
+.my-pic {
+    width: 80vh;
+    height: 80vh;
+    position: relative;
+    margin-left: 9%;
+}
+
+.my-pic:hover {
+    transform: scale(1.05);
+    transition: transform 2s;
+    cursor: pointer;
+}
+
+#about-me {
+    background-color: #000;
+    width: 30vh;
+    height: 6vh;
+    border: 1px inset silver;
+    border-radius: 14px;
+    padding: 12px 5px 5px 10px;
+    margin: auto;
+    color: #35b80d;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#about-me:hover {
+    transform: scale3d(1.15, 1.04, 1.50);
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+#main-content {
+    position: absolute;
+    display: flexbox;
+    gap: 2rem;
+}
+
+#desc {
+    background-color: #181818;
+    height: 80vh;
+    width: 70vh;
+    position: absolute;
+    padding: 0 0 0 0;
+    left: 115%;
+    top: 0;
+}
+
+#describe-me {
+    background-image: linear-gradient(195deg, #114103, #2d9c0c, #92ff71);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 25%;
+    margin-top: -40%;
+    position: relative;
+}
+
+form {
+    margin: auto;
+    place-items: center;
+    margin-left: 7vh;
+}
+h6 {
+    font-family: "poppins", sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    height: 6vh;
+    width: 30vh;
+   margin: auto;
+    text-align: center;
+    color: #35b80d;
+    border-radius: 14px;
+    background-color: #000;
+    border: 2px inset silver;
+    padding: 12px 5px 5px 10px;
+}
+
+h6:hover {
+    transform: scale3d(1.15, 1.04, 1.50);
+    transition: transform 2s;
+    cursor: pointer;
+}
+
+label {
+    color: #fff;
+    font-size: 27px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    left: 50%;
+}
+
+textarea {
+    background-color: #3b3b3b;
+    color: #cecece;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+[type=submit] {
+    left: 17%;
+    height: 40px;
+    width: 100px;
+    position: relative;
+    top: -10%;
+    cursor: pointer;
+    background-color: #181818;
+    color: #fff;
+}
+
+[type=reset] {
+    left: 17%;
+    height: 40px;
+    width: 100px;
+    position: relative;
+    top: -10%;
+    cursor: pointer;
+    background-color: #181818;
+    color: #fff;
+}
